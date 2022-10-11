@@ -80,7 +80,7 @@ const Blog = () => {
   return (
     <>
       <div className="flex flex-col justify-center bg-zinc-50 h-100vh">
-        <h1 className="py-10 text-2xl">Welcome to our blog page</h1>
+        <h1 className="py-10 text-5xl underline decoration-pink">Welcome to our blog page</h1>
 
         {isLoggedIn && (
           <div className="w-100wv mx-20 px-6 lg:px-8 my-12 bg-white border-8 border-pink rounded">

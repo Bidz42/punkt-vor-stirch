@@ -230,6 +230,7 @@ const Contact = () => {
                 Name
               </label>
               <input
+                required
                 type="text"
                 className="leading-none text-black p-3 focus:outline-none focus:border-blue-700 mt-4 bg-white rounded border-2 border-pink"
                 onChange={(e) => setContactName(e.target.value)}
@@ -240,6 +241,7 @@ const Contact = () => {
                 Last Name
               </label>
               <input
+                required
                 type="text"
                 className="leading-none text-black p-3 focus:outline-none focus:border-blue-700 mt-4 bg-white rounded border-2 border-pink"
                 onChange={(e) => setContactLastName(e.target.value)}
@@ -252,6 +254,7 @@ const Contact = () => {
                 Email
               </label>
               <input
+                required
                 type="email"
                 className="leading-none text-black p-3 focus:outline-none focus:border-blue-700 mt-4 bg-white rounded border-2 border-pink"
                 onChange={(e) => setContactEmail(e.target.value)}
@@ -262,6 +265,7 @@ const Contact = () => {
                 Phone
               </label>
               <input
+                required
                 type="text"
                 className="leading-none text-black p-3 focus:outline-none focus:border-blue-700 mt-4 bg-white rounded border-2 border-pink"
                 onChange={(e) => setContactPhone(e.target.value)}
@@ -274,6 +278,7 @@ const Contact = () => {
                 Subject
               </label>
               <input
+                required
                 type="text"
                 className="leading-none text-black p-3 focus:outline-none focus:border-blue-700 mt-4 bg-white rounded border-2 border-pink"
                 onChange={(e) => setContactSubject(e.target.value)}
@@ -286,6 +291,7 @@ const Contact = () => {
                 Message
               </label>
               <textarea
+                required
                 type="text"
                 className="h-40 text-base leading-none text-black p-3 focus:outline-none focus:border-blue-700 mt-4 bg-white rounded border-2 border-pink"
                 onChange={(e) => setContactMessage(e.target.value)}

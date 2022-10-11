@@ -44,7 +44,7 @@ const Statistics = () => {
           </p>
         </div>
 
-        <div className="md:w-1/2 lg:w-1/4">
+        <div className="md:w-1/2 lg:w-1/4 px-1">
         {isVisible && <h1 className="text-base md:text-3xl mb-2 text-pink pt-4"><AnimatedNumber value="62" formatValue={formatValue} duration="2500"/>%</h1> }
           <h2 className="font-bold	text-sm">DER ZUGELASSENEN AUTOS</h2>
           <p className="text-gray-500">
@@ -54,7 +54,7 @@ const Statistics = () => {
 
         </div>
 
-        <div className="md:w-1/2 lg:w-1/4">
+        <div className="md:w-1/2 lg:w-1/4 px-1">
         {isVisible && <h1 className="text-base md:text-3xl mb-2 text-pink pt-4"><AnimatedNumber value="18" formatValue={formatValue} duration="2500"/>%</h1>}
           <h2 className="font-bold	text-sm">DER CAR-SHARING USER</h2>
           <p className="text-gray-500">
@@ -70,8 +70,8 @@ const Statistics = () => {
             für Frauen bei Verkehrsunfällen verletzt zu werden, denn Angebote
             sind nicht auf sie zugeschnitten
           </p>
-
         </div>
+
       </div>
     </div>
   );

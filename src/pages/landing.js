@@ -47,7 +47,7 @@ const Landing = () => {
             viewBox="0 0 24 24"
             strokeWidth="2"
             stroke="currentColor"
-            className="w-10 h-10  bottom-20 right-10 fixed"
+            className="w-10 h-10 bottom-10 right-1 md:bottom-10 md:right-1 lg:bottom-20 lg:right-10 fixed"
           >
             <path
               strokeLinecap="round"
