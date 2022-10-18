@@ -17,7 +17,7 @@ const Blog = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5005/blog")
+      .get("https://drab-red-cuttlefish-boot.cyclic.app/blog")
       .then((response) => setBlogPostList(response.data))
       .catch((err) => console.log(err));
   }, [refresh]);
@@ -34,7 +34,7 @@ const Blog = () => {
     uploadImage.append("subject", subject);
 
     axios
-      .post("http://localhost:5005/blog", uploadImage)
+      .post("https://drab-red-cuttlefish-boot.cyclic.app/blog", uploadImage)
       .then((response) => {
         console.log(response);
         setRefresh(!refresh);
@@ -55,7 +55,7 @@ const Blog = () => {
     blogPostEdit.append("subject", subject);
 
     axios
-      .post(`http://localhost:5005/blog/edit`, blogPostEdit)
+      .post(`https://drab-red-cuttlefish-boot.cyclic.app/blog/edit`, blogPostEdit)
       .then((response) => {
         console.log(response);
         setRefresh(!refresh);
@@ -67,7 +67,7 @@ const Blog = () => {
   const handleDelete = (e, id) => {
     e.preventDefault();
     axios
-      .delete(`http://localhost:5005/blog/${id}`)
+      .delete(`https://drab-red-cuttlefish-boot.cyclic.app/blog/${id}`)
       .then((response) => {
         setRefresh(!refresh);
         console.log(response);

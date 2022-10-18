@@ -24,7 +24,7 @@ const Contact = () => {
     e.preventDefault();
 
     axios
-      .post("http://localhost:5005/edit/info", { email, phone, address })
+      .post("https://drab-red-cuttlefish-boot.cyclic.app/edit/info", { email, phone, address })
       .then((response) => {
         const { email, phone, address } = response;
         setAddress(address);
@@ -36,7 +36,7 @@ const Contact = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5005/edit/info")
+      .get("https://drab-red-cuttlefish-boot.cyclic.app/edit/info")
       .then((response) => {
         const { email, phone, address } = response.data;
         setAddress(address);
@@ -60,7 +60,7 @@ const Contact = () => {
     };
 
     axios
-      .post("http://localhost:5005/contact", fileContact)
+      .post("https://drab-red-cuttlefish-boot.cyclic.app/contact", fileContact)
       .then((response) => {
         console.log(response.data)
         setValidateSending(response.data)})

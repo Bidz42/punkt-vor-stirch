@@ -12,7 +12,7 @@ const Login = () => {
     const handleSubmit = (e) =>{
         e.preventDefault();
     
-         axios.post("http://localhost:5005/admin/login", {identifier, password})
+         axios.post("https://drab-red-cuttlefish-boot.cyclic.app/admin/login", {identifier, password})
             .then(response => {
                 console.log("JWT token", response.data.authToken);
                 setToken(response.data.authToken);

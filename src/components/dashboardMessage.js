@@ -24,7 +24,7 @@ const DashboardMessage = ({ data, reload, setReload }) => {
     const id = chosenMessage._id;
 
     axios
-      .post("http://localhost:5005/dashboard/edit", { id, targetValueEdit })
+      .post("https://drab-red-cuttlefish-boot.cyclic.app/dashboard/edit", { id, targetValueEdit })
       .then((response) => {
         console.log("edit response", response.data);
         setReload(!reload); //closest adds to new tab but doesnt refresh tabs and adds +1
@@ -37,7 +37,7 @@ const DashboardMessage = ({ data, reload, setReload }) => {
     const id = chosenMessage._id;
 
     axios
-      .delete(`http://localhost:5005/dashboard/${id}`)
+      .delete(`https://drab-red-cuttlefish-boot.cyclic.app/dashboard/${id}`)
       .then((response) => {
         console.log(response)
         setReload(!reload)

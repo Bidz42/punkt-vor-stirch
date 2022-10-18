@@ -29,7 +29,7 @@ const Dashboard = () => {
   // Axios request to get all messages and filter them by status
 
   useEffect(() => {
-    axios.get("http://localhost:5005/dashboard").then((response) => {
+    axios.get("https://drab-red-cuttlefish-boot.cyclic.app/dashboard").then((response) => {
       console.log('new data',response.data)
       setUnread(response.data[0])
       setRead(response.data[1])

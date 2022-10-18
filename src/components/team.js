@@ -1,9 +1,12 @@
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import axios from 'axios'
-
+import { AuthContext  } from "../context/auth.context";
 
 const Team = () => {
+
+  const {isLoggedIn} = useContext(AuthContext)
+
   const [showSocial, setShowSocial] = useState([false, ""]);
   const [name, setName] = useState("");
   const [position, setPosition] = useState([]);
@@ -20,8 +23,9 @@ const Team = () => {
 
   useEffect(() => {
 
-    axios.get("http://localhost:5005/team")
+    axios.get("https://drab-red-cuttlefish-boot.cyclic.app/team")
       .then(response => {
+
         setName(response.data.name)
         setPosition(response.data.position)
         setImage(response.data.image)
@@ -43,7 +47,7 @@ const Team = () => {
       teamData.append("twitter", twitter)
       teamData.append("linkedin", linkedin)
     
-    axios.post(`http://localhost:5005/team` , teamData)
+    axios.post(`https://drab-red-cuttlefish-boot.cyclic.app/team` , teamData)
       .then(response => {
         setName(response.data.name)
         setPosition(response.data.position)
@@ -205,12 +209,12 @@ const Team = () => {
             </div>
           )}
         </div>
-
+   
+      </div>
 
           {/* Edit Section */}
 
-        
-      </div>
+     {isLoggedIn && 
         <div className="flex  items-center justify-center py-12 px-4 sm:px-6 lg:px-8" >
           <div className="w-full max-w-md space-y-8">
             <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
@@ -321,10 +325,14 @@ const Team = () => {
                 </button>
               </div>
             </form>
+
           </div>
         </div>
 
+     }
+
     </div>
+
   );
 };
 

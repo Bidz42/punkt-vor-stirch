@@ -3,7 +3,7 @@ import { useState, useEffect, createContext } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
-const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5005";
+const API_URL = process.env.REACT_APP_API_URL || "https://drab-red-cuttlefish-boot.cyclic.app";
 const AuthContext = createContext();
 
 const Auth = (props) => {
