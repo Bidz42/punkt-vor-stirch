@@ -1,70 +1,41 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# PUNKT-VOR-STIRCH  
 
-## Available Scripts
+- Punkt vor stirch was build for a client who required a simple site for their starter company
+- They also required some CMS features for which they could edit some things in the site at wish
 
-In the project directory, you can run:
 
-### `npm start`
+## Languages
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- The site is built on javascript. 
+- The server is built using node.js, express and mongoDB.
+- The client has been built using React.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Routes
 
-### `npm test`
+- The homepage has all the company information needed to the user.
+- At the bottom there is also a contact form which is connected to the database
+- There is also a route to an 'impressum' page which has all the copyright information
+- Users can also access a blogs page where the admin can posts blogs
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- There is an admin login using /admin/login with the username: admin00 and password: ThisIsMyAdmin123456
+- This gives you access to a dashboard where the user contact forms which have been filled out come to the unread inbox.
+- The admin is then able to mark them into 4 different inboxes based on the mail received. 
+- Once logged in the admin can also change content on the homepage aswell as create and edit blogs.
+ 
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Authors
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- https://www.linkedin.com/in/muhammed-rahman / https://github.com/Bidz42
+- https://www.linkedin.com/in/soufiane-bdaoui / https://github.com/Bdaoui
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Source
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- https://punkt-vor-stirch.pages.dev/
+- https://github.com/Bidz42/punkt-vor-stirch
+- https://github.com/bdaoui/punkt-vor-stirch-server
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
