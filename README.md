@@ -10,6 +10,7 @@
 - The site is built on javascript. 
 - The server is built using node.js, express and mongoDB.
 - The client has been built using React.
+- Tailwind was used for UI 
 
 ## Routes
 
